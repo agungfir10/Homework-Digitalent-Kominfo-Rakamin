@@ -50,4 +50,4 @@ let convert = (from, to, temp) => {
   return result;
 };
 
-module.exports = { convert, r, f, c, k };
+module.exports = convert;

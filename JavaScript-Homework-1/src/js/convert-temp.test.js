@@ -1,4 +1,8 @@
-const { convert, r, f, c, k } = require("./convert-temp");
+const convert = require("./convert-temp");
+const r = "reamur",
+  f = "fahrenheit",
+  c = "celcius",
+  k = "kelvin";
 
 // Reamur to
 test("Convert 0R to equal 1", () => {
