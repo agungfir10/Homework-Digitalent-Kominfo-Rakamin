@@ -1,0 +1,107 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$theme-colors: (
+  "primary": #136223,
+);
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px,
+// );
+
+$container-max-widths: (
+  sm: 540px,
+  md: 700px,
+  lg: 720px,
+  xl: 800px,
+  xxl: 856px,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+$text-primary: #21243d;
+$text-secondary: #8695a4;
+
+* {
+  color: $text-primary;
+}
+
+#profile {
+  background-color: #edf7fa;
+}
+
+ul {
+  padding-left: 18px;
+  font-size: 12px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+section h1 {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: 18px;
+  color: #136223;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.project {
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+
+  h3 {
+    font-weight: 700;
+  }
+
+  .project-date {
+    background-color: #142850;
+    border-radius: 16px;
+    color: #fff;
+    padding: 4px 10px;
+    font-weight: 900;
+  }
+
+  .project-category {
+    margin-left: 26px;
+    color: $text-secondary;
+  }
+
+  .project-image {
+    height: 100%;
+    padding: 0;
+    background-size: cover;
+    border-radius: 8px;
+  }
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+}
+
+@media (min-width: 956px) {
+  .text-project {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 956px) {
+  #headline {
+    text-align: center;
+  }
+}

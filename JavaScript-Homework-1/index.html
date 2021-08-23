@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Temperature Converte</title>
+</head>
+
+<body class="vh-100 flex">
+    <header class="container">
+        <h1>Temperature Converter</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flex" id="selects-temp">
+                <select name="from-temp" id="from-temp" class="select-temp">
+                    <option value="reamur">Reamur</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celcius">Celcius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <span class="to-temp-icon">→</span>
+                <select name="to-temp" id="to-temp" class="select-temp">
+                    <option value="reamur">Reamur</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="celcius">Celcius</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <input type="number" name="input-to-convert" id="input-to-convert">
+            <p class="assign">=</p>
+            <input type="number" name="convert-result" id="convert-result">
+            <h2>Change Background Color</h2>
+            <input type="text" name="input-bg-color" id="input-bg-color">
+            <button class="btn btn-width-full btn-primary" id="submit-bg-color" type="submit"
+                name="submit-bg-color">Change</button>
+        </div>
+    </main>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
